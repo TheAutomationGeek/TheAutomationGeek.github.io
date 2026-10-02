@@ -1,0 +1,28 @@
+:root{--paper:#f4f1e6;--card:#fffdf7;--ink:#1d3a31;--muted:#5a6e64;--green:#1f5a47;--green-deep:#163f33;--gold:#d2c389;--gold-ink:#7a6a2c;--line:#e3dcc4;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--paper:#12201b;--card:#18291f;--ink:#e6efe9;--muted:#a9b9b0;--green:#9ad2b4;--green-deep:#b9e3cb;--gold:#d2c389;--gold-ink:#d2c389;--line:#2a3d33}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--green)}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+header{padding:22px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);font-weight:700;font-size:22px;letter-spacing:-.3px}
+.brand img{width:44px;height:44px}
+nav{display:flex;gap:18px;flex-wrap:wrap;margin-top:6px;font-size:15px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center;padding:40px 0 24px}
+.hero h1{font-size:44px;line-height:1.1;margin:0 0 14px;letter-spacing:-1px}
+.hero p{font-size:19px;color:var(--muted);margin:0 0 18px}
+.hero img{width:100%;max-width:300px;justify-self:center}
+.pill{display:inline-block;background:var(--gold);color:#1d3a31;border-radius:999px;padding:4px 14px;font-size:14px;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:24px 0 40px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.card h3{margin:0 0 6px;font-size:18px}
+.card p{margin:0;color:var(--muted);font-size:16px}
+main.doc{padding:16px 0 48px}
+main.doc h1{font-size:34px;margin:10px 0 4px}
+main.doc h2{font-size:22px;margin:30px 0 8px}
+.meta{color:var(--muted);font-size:15px}
+table{border-collapse:collapse;width:100%;font-size:15px}
+td,th{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
+footer{border-top:1px solid var(--line);padding:22px 0 40px;color:var(--muted);font-size:14px}
+@media (max-width:720px){.hero{grid-template-columns:1fr;padding-top:16px}.hero h1{font-size:34px}.hero img{max-width:180px;order:-1}}

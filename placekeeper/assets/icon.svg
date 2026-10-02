@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <title>PlaceKeeper</title>
+  <rect width="1024" height="1024" rx="224" fill="#1f5a47"/>
+  <g transform="translate(0 -16)">
+    <path d="M512 470 L790 584 L512 698 L234 584 Z" fill="#163f33"/>
+    <path d="M512 474 C512 474 400 362 400 286 a112 112 0 0 1 224 0 C624 362 512 474 512 474Z" fill="#d2c389"/>
+    <circle cx="512" cy="286" r="46" fill="#1f5a47"/>
+    <path d="M234 584 L512 698 L512 880 L234 766 Z" fill="#f4f1e6"/>
+    <path d="M512 698 L790 584 L790 766 L512 880 Z" fill="#ddd5bb"/>
+    <path d="M234 584 L512 698 L436 770 L156 656 Z" fill="#ece6d2"/>
+    <path d="M790 584 L512 698 L588 770 L868 656 Z" fill="#cfc5a6"/>
+    <path d="M234 584 L512 470 L432 420 L152 534 Z" fill="#e3dcc4"/>
+    <path d="M790 584 L512 470 L592 420 L872 534 Z" fill="#d6cdb0"/>
+  </g>
+</svg>
