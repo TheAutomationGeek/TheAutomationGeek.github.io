@@ -26,3 +26,10 @@ table{border-collapse:collapse;width:100%;font-size:15px}
 td,th{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
 footer{border-top:1px solid var(--line);padding:22px 0 40px;color:var(--muted);font-size:14px}
 @media (max-width:720px){.hero{grid-template-columns:1fr;padding-top:16px}.hero h1{font-size:34px}.hero img{max-width:180px;order:-1}}
+.lead{font-size:19px;color:var(--muted)}
+.promises{margin:20px 0 8px}
+.promise{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--gold);border-radius:16px;padding:20px 24px;margin:0 0 32px}
+.promise h2{margin:0 0 8px;font-size:24px}
+.promise p{margin:0 0 8px;color:var(--muted)}
+.promise p:last-child{margin:0;font-weight:600}
+main.doc li{margin:0 0 10px}
