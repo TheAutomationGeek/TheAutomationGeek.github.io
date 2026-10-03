@@ -18,7 +18,7 @@ nav{display:flex;gap:18px;flex-wrap:wrap;margin-top:6px;font-size:15px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
 .card h3{margin:0 0 6px;font-size:18px}
 .card p{margin:0;color:var(--muted);font-size:16px}
-main.doc{padding:16px 0 48px}
+main.doc{padding:16px 20px 48px}
 main.doc h1{font-size:34px;margin:10px 0 4px}
 main.doc h2{font-size:22px;margin:30px 0 8px}
 .meta{color:var(--muted);font-size:15px}
