@@ -7,14 +7,14 @@
 <section class="grid promises">
 <div class="card"><h3>We never see your data</h3><p>There is no PlaceKeeper server. Your inventory, photos and history live in the app on your phone and PC. They never reach us, so we can't read them, sell them or lose them in a breach.</p></div>
 <div class="card"><h3>No ads</h3><p>There are no ads in PlaceKeeper, and nothing in it is built to show them. Your belongings are not a marketing profile.</p></div>
-<div class="card"><h3>Nothing phones home</h3><p>No telemetry, no analytics, no crash reports and no monitoring of any kind. The app never reports to us what you do, what you own or even that you opened it. There is nowhere for it to report to.</p></div>
+<div class="card"><h3>Nothing phones home</h3><p>No telemetry, no analytics, no crash reports and no monitoring of any kind. The app never reports to us what you do, what you own or even that you opened it. On its own it contacts nothing except the sync you connected and the checks you switch on, such as a monthly recall check.</p></div>
 <div class="card"><h3>No account with us</h3><p>Install it and start. There is no PlaceKeeper sign-up, no email list and nothing to log in to.</p></div>
 <div class="card"><h3>Encrypted on your device</h3><p>Your inventory is encrypted by default with a key kept by your phone or PC's operating system. You can add an app lock as well.</p></div>
 <div class="card"><h3>Works offline</h3><p>Adding items, scanning labels, lending, returning and searching all work with no internet at all. Nothing waits on a server.</p></div>
 </section>
 
 <h2>If you sync, it goes through your own cloud</h2>
-<p>To keep your phone and PC in step, or to share a household inventory, PlaceKeeper writes files to a folder in <strong>your own</strong> Google Drive, OneDrive or Dropbox. Those files are encrypted on your device before they are uploaded. Your cloud provider stores them but cannot read them. We never receive them at all.</p>
+<p>To keep your phone and PC in step, or to share a household inventory, PlaceKeeper writes files to a folder in <strong>your own</strong> Google Drive, OneDrive or Dropbox. Those files are encrypted on your device before they are uploaded. We never receive them at all. Once you connect, the app checks that folder every few minutes while it is open, and while it is closed only if you turn that on.</p>
 <p>In a shared household, each person signs in with their own account, and only devices that a household member has approved can unlock the data.</p>
 
 <h2>Take it with you</h2>
@@ -25,9 +25,9 @@
 <ul>
 <li><strong>We can't recover your data for you.</strong> If you lose every device and every backup, it is gone. Keep a backup somewhere safe, and keep its passphrase.</li>
 <li><strong>Anyone using your unlocked device can see your inventory.</strong> Encryption protects the stored data, not an open app. Turn on the app lock if that matters to you.</li>
-<li><strong>Your cloud provider can see that the files exist:</strong> their sizes and when they changed, but not what is in them.</li>
-<li><strong>Some parts come from Google, Microsoft and Dropbox.</strong> Signing in to your cloud account uses that company's own sign-in. On Android, the barcode scanner is Google's ML Kit, which may send Google anonymous statistics about how the scanner performs. None of it includes your inventory, and none of it comes to us.</li>
-<li><strong>Some optional lookups use the internet.</strong> Looking up a book sends its ISBN to Open Library, and connecting a Steam or Plex library asks that service for your list. Nothing else about your inventory is sent.</li>
+<li><strong>Your cloud provider can see that the files exist:</strong> their sizes and when they changed, but not what is in them. If you let your cloud sign-in open a collection (the recommended choice, so a new device only needs to sign in), its key is kept in the same cloud folder, so anyone who gets into that account, and the provider, could open it. Choose "extra protection" to keep the key only with you.</li>
+<li><strong>Some parts come from Google, Microsoft and Dropbox.</strong> Signing in to your cloud account uses that company's own sign-in. On Android, the barcode scanner is Google's ML Kit; it runs on your device, PlaceKeeper removes its statistics upload and deletes its local usage log. None of it includes your inventory, and none of it comes to us.</li>
+<li><strong>Lookups use the internet when you scan or search.</strong> Scanning a barcode sends just that number to a public catalog such as Open Library or UPCitemdb to fill in the details; this is on unless you turn it off. Find details sends the name you typed. Check for recalls sends only brands and models to the US recall lists. Connecting a Steam, Plex or calibre library asks that service for your list, and Collection value, if you turn it on, asks PriceCharting with your own key. Nothing else about your inventory is sent. Every service is listed in the <a href="privacy.html">privacy policy</a>.</li>
 </ul>
 <p>The full details are in the <a href="privacy.html">privacy policy</a>.</p>
 </main>

@@ -2,20 +2,38 @@
 <header class="wrap top"><a class="brand" href="./"><img src="assets/icon.svg" alt="">PlaceKeeper</a><nav><a href="./">Home</a><a href="your-data.html">Your data</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav></header>
 <main class="wrap doc">
 <h1>Privacy policy</h1>
-<p class="meta">Effective 2 October 2026 · Applies to the PlaceKeeper apps for Windows and Android</p>
+<p class="meta">Effective October 4, 2026 · Applies to the PlaceKeeper apps for Windows and Android</p>
 <h2>In short</h2>
-<p>PlaceKeeper stores your inventory on your own devices. We, the people who make PlaceKeeper, never receive it. There are no accounts, no servers that hold your data, no analytics, no telemetry, no advertising and no tracking. The app never reports anything to us.</p>
+<p>PlaceKeeper stores your inventory on your own devices. We, the people who make PlaceKeeper, never receive it. There are no accounts, no servers that hold your data, no analytics, no telemetry, no crash reports, no advertising and no tracking. The app never reports anything to us.</p>
+<p>PlaceKeeper never contacts anything on its own except the items under <a href="#on-its-own">On its own</a> below, each of which you set up and can turn off. Every other connection happens only when you do something, and all of them are listed on this page.</p>
 <h2>What PlaceKeeper stores, and where</h2>
 <p>Your items, places, photos, loans and history are stored in the app's own database on each device you use. It is encrypted by default with a key held by your device's operating system; you can turn encryption off in Settings. Backups you create are encrypted with a passphrase you choose and saved wherever you put them.</p>
-<h2>Optional connections</h2>
-<p>PlaceKeeper only talks to an outside service if you turn on a feature that needs it:</p>
+<h2>What PlaceKeeper sends over the internet</h2>
+<p>Like any internet request, each service below sees your device's IP address and the time. Barcode and name lookups also see the app's name and version. None of these services is ours, and nothing on this page is sent to us.</p>
+<h3>Only when you do something</h3>
 <table>
-<tr><th>Feature</th><th>Service</th><th>What is sent</th></tr>
-<tr><td>Cloud sync and shared households</td><td>Google Drive, Microsoft OneDrive or Dropbox — your own account</td><td>Encrypted inventory and photo files are written to a folder in your account (or a folder shared with you). They are encrypted on your device before upload; the provider cannot read them, and we never receive them.</td></tr>
-<tr><td>Book lookup</td><td>Open Library (openlibrary.org)</td><td>The ISBN you ask to look up.</td></tr>
-<tr><td>Connected libraries</td><td>Steam or Plex — your own account</td><td>A read-only request for the list of games or media in your library.</td></tr>
+<tr><th>Feature</th><th>Service</th><th>What is sent, and when</th></tr>
+<tr><td>Barcode lookup<br>(on unless you turn it off)</td><td>Books: Open Library and Google Books. Other products: UPCitemdb, Open Products Facts and MusicBrainz. PriceCharting or EAN-Search only if you add your own key.</td><td>Only the barcode number, when you scan a barcode in Add item, Edit or Quick capture, or press Look up; with your own key, that key goes to its own service. A barcode you scanned and saved before the answer arrived is looked up later, but only while the app is open and unlocked. Turn it off in Settings › Sync and sharing › Barcode lookup.</td></tr>
+<tr><td>Find details</td><td>Open Library, Google Books, Wikidata and MusicBrainz. IGDB (through Twitch), TMDB or BoardGameGeek only if you add your own key.</td><td>The name you typed, when you press Find details, and downloads of the pictures it shows. It is hidden while Barcode lookup is off.</td></tr>
+<tr><td>Recall check</td><td>US recall lists: CPSC (saferproducts.gov) and NHTSA (api.nhtsa.gov and data.transportation.gov)</td><td>When you press Check for recalls on an item or for your whole inventory: only each item’s brand and model, and a vehicle’s model year. Private items only when you include them. Possible matches are shown for you to confirm or dismiss.</td></tr>
+<tr><td>Collection value<br>(off unless you turn it on)</td><td>PriceCharting, with your own key</td><td>Only after you turn on Track collection value and add your own PriceCharting key: when you press Refresh, your key with a product number, a barcode, or a game’s name and platform, at most one request a second. Firearms and ammunition are never priced. Prices and their history stay on your device and are not in backups, shared files or sync.</td></tr>
+<tr><td>Cloud collections</td><td>Google Drive, Microsoft OneDrive or Dropbox — your own account</td><td>When you connect, create, join or press Check now: encrypted inventory and photo files in PlaceKeeper's own folder in your account. They are encrypted on your device before upload. If you choose to open the collection with your cloud sign-in (the recommended choice), its key is kept in that same folder, so anyone who can sign in to that account, and the provider, could open it; "extra protection" keeps the key only with you.</td></tr>
+<tr><td>Shared households</td><td>Google Drive or Microsoft OneDrive — each person's own account</td><td>Encrypted files in a shared household folder, which only approved members' devices can unlock. Inviting someone sends their email address to Google or Microsoft, which emails them the invitation.</td></tr>
+<tr><td>Connected libraries</td><td>Steam, Plex or a calibre Content server — your own account</td><td>When you connect or refresh: a read-only request for your list of games, media or books. Steam receives your Steam ID and your own Web API key; Plex your Plex sign-in, sent to plex.tv and your Plex server; calibre the user name and password of the server you enter, if it has one.</td></tr>
 </table>
 <p>Signing in to these services happens on the provider's own page. PlaceKeeper keeps the resulting access token on your device, protected by the operating system, and never shares it.</p>
+<h3 id="on-its-own">On its own (unattended)</h3>
+<p>These are the only contacts PlaceKeeper makes without you pressing something. Each one needs you to set it up first, and each can be turned off.</p>
+<table>
+<tr><th>Feature</th><th>Service</th><th>What is sent, and when</th></tr>
+<tr><td>Cloud sync while the app is open</td><td>Your Google Drive, OneDrive or Dropbox</td><td>Only after you connect and open a collection: the same encrypted files, about every 5 minutes (you can choose from 1 to 60), after you save and when you come back to the app. Pause checks or disconnect in Cloud collections.</td></tr>
+<tr><td>Household sync while the app is open</td><td>Your Google Drive or OneDrive</td><td>Only after you connect a household folder: the same encrypted files, about every 30 seconds while the app is open. Disconnect the household folder or leave the household to stop it.</td></tr>
+<tr><td>Checks while closed<br>(off unless you turn them on)</td><td>Your Google Drive, OneDrive or Dropbox</td><td>Only if you turn them on in Cloud collections (not available with the app lock on): a cloud check every 15 minutes to 6 hours, when your device allows. Pause or turn them off there.</td></tr>
+<tr><td>Daily collection value<br>(off unless you turn it on)</td><td>PriceCharting, with your own key</td><td>Only if you choose to refresh once a day in Track collection value: at most once a day, while the app is open and unlocked, the same request as Refresh. Private items are never included. Untick it there to stop.</td></tr>
+<tr><td>Monthly recall check<br>(off unless you turn it on)</td><td>The US recall lists above</td><td>Only if you turn it on in Settings › Sync and sharing: about once a month while the app is open and unlocked, the same brands and models as Check for recalls. It tells you only about possible recalls it has not shown before. Turn the switch off to stop.</td></tr>
+</table>
+<h3>What is never sent</h3>
+<p>No usage statistics, crash reports or advertising data. On Windows, PlaceKeeper switches off the reporting of the built-in web view and deletes its usage and crash files. On Android, the barcode scanner (Google's ML Kit) runs on your device with its statistics upload removed, its local usage log is deleted, and Android's cloud backup of PlaceKeeper's data is turned off. Windows and Android update their own web components separately; that is the operating system, not PlaceKeeper.</p>
 <h2>Google user data</h2>
 <p>If you connect Google Drive, PlaceKeeper uses Google's Drive permission only to create, read and update PlaceKeeper's own encrypted files in the folder you choose or that is shared with you, so that your devices (and, if you share a household, the people you share with) stay in step. PlaceKeeper does not read, use or modify any other files in your Drive. Google user data is used only to provide this sync feature on your devices; it is not transferred to anyone else, not used for advertising, and not read by humans.</p>
 <p>PlaceKeeper's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
